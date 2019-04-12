@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import sys
+
 class Oceans():
 
     # The ocean is a dictionary with keys and values of ships.
@@ -8,6 +11,17 @@ class Oceans():
     def __init__(self):
         self.create_ocean()
 
-    # Override and print the ocean.
+    # Override the print function and print the ocean.
     def __str__(self):
-        
+        oceanString = ""
+        for o in self.__ocean:
+            oceanString = oceanString + o
+        return str(oceanString)
+
+def main():
+    #o = Oceans()
+    #print(str(o))
+    print("aa")
+
+if __name__ == "__main__":
+    main()
